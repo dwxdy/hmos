@@ -495,4 +495,6 @@ const LINK_DATA: LinkDataModel[] = [
     'imageUrl': $r('app.media.ic_img_15'),
     'price': 0
   }
+
+  //课程列表
 ]

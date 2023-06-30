@@ -41,12 +41,12 @@ export default struct Home {
 
         Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
           Row() {
-            TextInput({ placeholder: 'search...' })
+            TextInput({ placeholder: '搜索' })
               .width('80%')
               .height(40)
               .backgroundColor('#FFFFFF')
               .margin({ right: 8 })
-              .onClick(()=>Router.push({ uri:'pages/SearchPage' }))
+              .onClick(() => Router.push({ uri: 'pages/SearchPage' }))
 
             Image($r("app.media.public"))
               .width(20)
@@ -58,6 +58,7 @@ export default struct Home {
         Swiper(this.swiperController) {
           ForEach(mainViewModel.getSwiperImages(), (img: Resource) => {
             Image(img).borderRadius($r('app.float.home_swiper_borderRadius'))
+              .width('90%').height(150).borderStyle(BorderStyle.Dashed)
           }, img => img.id)
         }
         .margin({ top: $r('app.float.home_swiper_margin') })

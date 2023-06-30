@@ -27,11 +27,12 @@ export class MainViewModel {
    */
   getSwiperImages(): Array<Resource> {
     let swiperImages: Resource[] = [
-      $r('app.media.fig1'),
-      $r('app.media.fig2'),
-      $r('app.media.fig3'),
-      $r('app.media.fig4')
-    ];
+      $r('app.media.run1'),
+      $r('app.media.run2'),
+      $r('app.media.run3'),
+      $r('app.media.run4')
+    ]; //轮播图
+
     return swiperImages;
   }
 
@@ -50,7 +51,9 @@ export class MainViewModel {
       new ItemData($r('app.string.group'), $r('app.media.circle')),
       new ItemData($r('app.string.favorites'), $r('app.media.favorite')),
       new ItemData($r('app.string.recycle_bin'), $r('app.media.recycle'))
-    ];
+    ]; //2*4界面
+
+
     return firstGridData;
   }
 
@@ -66,7 +69,9 @@ export class MainViewModel {
       new ItemData($r('app.string.mainPage_new'), $r('app.media.new'), $r('app.string.mainPage_text_new')),
       new ItemData($r('app.string.mainPage_brand'), $r('app.media.brand'), $r('app.string.mainPage_text_brand')),
       new ItemData($r('app.string.mainPage_found'), $r('app.media.found'), $r('app.string.mainPage_text_found'))
-    ];
+    ];//列表图
+
+
     return secondGridData;
   }
 
@@ -84,7 +89,9 @@ export class MainViewModel {
       new ItemData($r('app.string.setting_list_about'), $r("app.media.about"), null),
       new ItemData($r('app.string.setting_list_storage'), $r("app.media.storage"), null),
       new ItemData($r('app.string.setting_list_privacy'), $r("app.media.privacy"), null)
-    ];
+    ];//个人界面栏位图
+
+
     return settingListData;
   }
 }
