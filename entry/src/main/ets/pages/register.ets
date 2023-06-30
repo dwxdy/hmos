@@ -74,9 +74,8 @@ struct register {
         .width('30%')
         .height('5%')
         .onClick(() => {
-          if ((this.password == this.password1) && this.password!='' && this.password1!='' && this.userName!='')
-          {AlertDialog.show(
-            {
+          if ((this.password == this.password1) && this.password!='' && this.password1!='' && this.userName!='') {
+            AlertDialog.show({
               title: '提示',
               message: '注册成功，返回登录界面',
               autoCancel: true,
@@ -84,7 +83,12 @@ struct register {
               confirm: {
                 value: '确定',
                 action: () => {
-                  router.back()
+                  router.push({uri:'pages/Index',
+                    params:{
+                      UN:this.userName,
+                      PW:this.password
+                    }
+                  })
                 }
               }
             }

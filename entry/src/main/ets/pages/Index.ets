@@ -5,7 +5,6 @@ import router from '@ohos.router'
 @Entry
 @Component
 struct Index {
-  //@State message: string = 'Hello World'
 
   @State userName: string = '' //用户名使用手机号
   @State password: string = '' //密码
@@ -17,7 +16,10 @@ struct Index {
 
       Text(($r('app.string.App_title'))).fontSize($r('app.float.login_title_font_size')).fontWeight(Const.FONT_BOLDER)
       Column() {
-        Text(this.userName)
+        //Text(this.userName)
+        // if (!this.userNameCheckReg.test(this.userName)) {
+        //   Text('用户名必须是11位手机号').fontColor(Color.Red)
+        // }
           TextInput({placeholder: $r('app.string.Login_UserName')})
             .type(InputType.PhoneNumber)
             .backgroundColor(Color.White)
@@ -25,15 +27,8 @@ struct Index {
             .margin({top: $r('app.float.login_input_margin_top')})
             .onChange((value)=>{
               this.userName=value;
+              console.info(this.userName)
             })
-
-        // if(!this.userNameCheckReg.test(this.userName) && this.userName !=''){
-        //   Text($r('app.string.user_name_error_message'))
-        //     .fontSize($r('app.float.login_error_message_font_size'))//15vp
-        //     .fontWeight(Const.FONT_BOLDER)//700
-        //     .fontColor(Color.Red)
-        //     .width(Const.CONTENT_SIZE)// 95%
-        //   }//手机号错误
 
           TextInput({placeholder:$r('app.string.Login_Password')})
             .backgroundColor(Color.White)
@@ -64,6 +59,7 @@ struct Index {
               })
 
             }else if (this.userName == '' && this.password == '') {
+              Logger.error('login system',`${this.userName} login fail!`)
               AlertDialog.show(
                 {
                   title: '提示',
@@ -83,6 +79,7 @@ struct Index {
               )
             }
             else if (this.userName == ''&& this.password != '') {
+              Logger.error('login system',`${this.userName} login fail!`)
               AlertDialog.show(
                 {
                   title: '提示',
@@ -102,6 +99,7 @@ struct Index {
               )
             }
             else if (this.password == '' && this.userName != '') {
+              Logger.error('login system',`${this.userName} login fail!`)
               AlertDialog.show(
                 {
                   title: '提示',
@@ -120,7 +118,8 @@ struct Index {
                 }
               )
             }
-            else if (this.userName != '1' || this.password != '1') {
+            else if (this.userName != router.getParams()['UN'] || this.password != router.getParams()['PW']) {
+              Logger.error('login system',`${this.userName} login fail!`)
               AlertDialog.show(
                 {
                   title: '提示',
@@ -140,8 +139,9 @@ struct Index {
               )
             }
             else{
+              Logger.info('login system',`${this.userName} login ok!`)
               router.pushUrl({
-                url:'pages/home'
+                url:'pages/loading'
               })
             }
 

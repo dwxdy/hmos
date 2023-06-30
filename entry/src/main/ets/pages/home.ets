@@ -81,10 +81,6 @@ struct home {
             .height(24)
             .margin({ left: 24})
 
-          // Image('common/navigation_icon1.svg')
-          //   .width(20)
-          //   .height(24)
-          //   .margin({ left: 24 })
         }
 
 
