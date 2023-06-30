@@ -3,6 +3,9 @@
 import CommonConstants from '../../common/constants/CommonConstants';
 import Home from "../view/Home"
 import Setting from "../view/Setting"
+import IndexPage from "../pages/IndexPage"
+import View from './View';
+import router from '@ohos.router';
 
 /**
  * Main page
@@ -37,13 +40,30 @@ struct MainPage {
       barPosition: BarPosition.End,
       controller: this.tabsController
     }) {
+
       TabContent() {
         Home()
       }
       .padding({ left: $r('app.float.mainPage_padding'), right: $r('app.float.mainPage_padding') })
       .backgroundColor($r('app.color.mainPage_backgroundColor'))
       .tabBar(this.TabBuilder(CommonConstants.HOME_TITLE, CommonConstants.HOME_TAB_INDEX,
-      $r('app.media.home_selected'), $r('app.media.home_normal')))
+      $r('app.media.home_selected'), $r('app.media.home_normal')))//底部栏 主页
+
+      TabContent() {
+        IndexPage()
+      }
+      .padding({ left: $r('app.float.mainPage_padding'), right: $r('app.float.mainPage_padding') })
+      .backgroundColor($r('app.color.mainPage_backgroundColor'))
+      .tabBar(this.TabBuilder(CommonConstants.FIND_TITLE, CommonConstants.FIND_TAB_INDEX,
+        $r('app.media.find_selected'), $r('app.media.find_normal')))//课程
+
+      TabContent() {
+        View()
+      }
+      .padding({ left: $r('app.float.mainPage_padding'), right: $r('app.float.mainPage_padding') })
+      .backgroundColor($r('app.color.mainPage_backgroundColor'))
+      .tabBar(this.TabBuilder(CommonConstants.VIEW_TITLE, CommonConstants.VIEW_TAB_INDEX,
+        $r('app.media.view_selected'), $r('app.media.view_normal')))//视频
 
       TabContent() {
         Setting()
@@ -51,8 +71,10 @@ struct MainPage {
       .padding({ left: $r('app.float.mainPage_padding'), right: $r('app.float.mainPage_padding') })
       .backgroundColor($r('app.color.mainPage_backgroundColor'))
       .tabBar(this.TabBuilder(CommonConstants.MINE_TITLE, CommonConstants.MINE_TAB_INDEX,
-      $r('app.media.mine_selected'), $r('app.media.mine_normal')))
+      $r('app.media.mine_selected'), $r('app.media.mine_normal')))//我的
+
     }
+
     .width(CommonConstants.FULL_PARENT)
     .backgroundColor(Color.White)
     .barHeight($r('app.float.mainPage_barHeight'))

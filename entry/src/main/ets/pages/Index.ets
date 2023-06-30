@@ -139,9 +139,11 @@ struct Index {
               )
             }
             else{
+
               Logger.info('login system',`${this.userName} login ok!`)
               router.pushUrl({
-                url:'pages/loading'
+                url:'pages/loading',
+
               })
             }
 

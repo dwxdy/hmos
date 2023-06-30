@@ -36,7 +36,6 @@
       "name": "user_name_error_message",
       "value": "phone number error"
     },
-
         {
           "name": "login_page",
           "value": "Login page"
@@ -244,9 +243,40 @@
         {
           "name": "setting_toggle",
           "value": "switch"
-        }
+        },
 
-
+    {
+      "name": "loading",
+      "value": "loading..."
+    },
+    {
+      "name": "free_price",
+      "value": "Free"
+    },
+    {
+      "name": "price_str",
+      "value": "¥%d"
+    },
+    {
+      "name": "hei_ti_medium",
+      "value": "HarmonyHeiTi-Medium"
+    },
+    {
+      "name": "hei_ti",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "recent_searches",
+      "value": "Recent Searches"
+    },
+    {
+      "name": "no_search_content",
+      "value": "There is no search content"
+    },
+    {
+      "name": "search",
+      "value": "Search"
+    }
   ]
 }
 

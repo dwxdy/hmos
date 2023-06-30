@@ -39,9 +39,10 @@ export default class CommonConstants {
    */
   static readonly HOME_TITLE = '首页';
 
-  /**
-   * Title text of the setting page
-   */
+  static  readonly FIND_TITLE = '课程';
+
+  static readonly VIEW_TITLE = '视频';
+
   static readonly MINE_TITLE = '我的';
 
   /**
@@ -64,11 +65,41 @@ export default class CommonConstants {
    */
   static readonly HOME_TAB_INDEX = 0;
 
+  static readonly MINE_TAB_INDEX = 3;
+
+  static readonly FIND_TAB_INDEX = 1;
+
+  static  readonly VIEW_TAB_INDEX = 2;
+
+  static readonly LABEL_FONT_WEIGHT: number = 400;
+
   /**
-   * Mine tab index
+   * title font weight 500.
    */
-  static readonly MINE_TAB_INDEX = 1;
+  static readonly TITLE_FONT_WEIGHT: number = 500;
 
+  /**
+   * course item padding 12.
+   */
+  static readonly COURSE_ITEM_PADDING: number = 12;
 
+  /**
+   * loading duration 2000.
+   */
+  static readonly LOADING_DURATION: number = 2000;
 
+  /**
+   * title line number 2.
+   */
+  static readonly TITLE_LINE_NUMBER: number = 2;
+
+  /**
+   * 100 percent.
+   */
+  static readonly FULL_PERCENT: string = '100%';
+
+  /**
+   * classify title percent.
+   */
+  static readonly CLASSIFY_TITLE_PERCENT: string = '55%';
 }

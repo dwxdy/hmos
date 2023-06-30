@@ -16,6 +16,8 @@
 import CommonConstants from '../../common/constants/CommonConstants';
 import mainViewModel from '../viewmodel/MainViewModel';
 import ItemData from '../../common/bean/ItemData';
+import router from '@ohos.router';
+import Router from '@system.router';
 
 /**
  * Home tab content
@@ -44,6 +46,7 @@ export default struct Home {
               .height(40)
               .backgroundColor('#FFFFFF')
               .margin({ right: 8 })
+              .onClick(()=>Router.push({ uri:'pages/SearchPage' }))
 
             Image($r("app.media.public"))
               .width(20)

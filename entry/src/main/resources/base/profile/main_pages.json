@@ -7,6 +7,9 @@
     "pages/2",
     "pages/3",
     "pages/loading",
-    "pages/MainPage"
+    "pages/MainPage",
+    "pages/IndexPage",
+    "pages/View",
+    "pages/SearchPage"
   ]
 }

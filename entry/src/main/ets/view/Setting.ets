@@ -16,6 +16,7 @@
 import CommonConstants from '../../common/constants/CommonConstants';
 import ItemData from '../../common/bean/ItemData';
 import mainViewModel from '../viewmodel/MainViewModel';
+import Router from '@system.router';
 
 /**
  * Setting tab content
@@ -68,9 +69,9 @@ export default struct Setting {
           Column() {
             Text($r('app.string.setting_account_name'))
               .fontSize($r('app.float.setting_account_fontSize'))
-            Text($r('app.string.setting_account_email'))
-              .fontSize($r('app.float.little_text_size'))
-              .margin({ top: $r('app.float.setting_name_margin') })
+            // Text($r('app.string.setting_account_email'))
+            //   .fontSize($r('app.float.little_text_size'))
+            //   .margin({ top: $r('app.float.setting_name_margin') })
           }
           .alignItems(HorizontalAlign.Start)
           .margin({ left: $r('app.float.setting_account_margin') })
@@ -111,6 +112,9 @@ export default struct Setting {
           .fontWeight(FontWeight.Medium)
           .backgroundColor($r('app.color.setting_button_backgroundColor'))
           .margin({ bottom: $r('app.float.setting_button_bottom')})
+          .onClick(()=>{
+            Router.push({uri:'pages/Index'})
+          })
       }
       .height(CommonConstants.FULL_PARENT)
     }

@@ -20,86 +20,86 @@
       "name": "login_error_message_font_size",
       "value": "15"
     },
-        {
-          "name": "logo_image_size",
-          "value": "78vp"
-        },
-        {
-          "name": "logo_margin_top",
-          "value": "100vp"
-        },
-        {
-          "name": "logo_margin_bottom",
-          "value": "8vp"
-        },
-        {
-          "name": "page_title_text_size",
-          "value": "24fp"
-        },
-        {
-          "name": "normal_text_size",
-          "value": "16fp"
-        },
-        {
-          "name": "big_text_size",
-          "value": "18fp"
-        },
-        {
-          "name": "small_text_size",
-          "value": "14fp"
-        },
-        {
-          "name": "little_text_size",
-          "value": "12fp"
-        },
-        {
-          "name": "login_more_margin_bottom",
-          "value": "30vp"
-        },
-        {
-          "name": "login_more_margin_top",
-          "value": "8vp"
-        },
-        {
-          "name": "forgot_margin_top",
-          "value": "8vp"
-        },
-        {
-          "name": "input_margin_top",
-          "value": "12vp"
-        },
-        {
-          "name": "line_height",
-          "value": "1vp"
-        },
-        {
-          "name": "login_button_height",
-          "value": "40vp"
-        },
-        {
-          "name": "login_button_margin_top",
-          "value": "87vp"
-        },
-        {
-          "name": "login_button_margin_bottom",
-          "value": "12vp"
-        },
-        {
-          "name": "vertical_line_margin",
-          "value": "15vp"
-        },
-        {
-          "name": "login_progress_size",
-          "value": "30vp"
-        },
-        {
-          "name": "login_progress_margin_top",
-          "value": "20vp"
-        },
-        {
-          "name": "other_login_margin_top",
-          "value": "50vp"
-        },
+    {
+      "name": "logo_image_size",
+      "value": "78vp"
+    },
+    {
+      "name": "logo_margin_top",
+      "value": "100vp"
+    },
+    {
+      "name": "logo_margin_bottom",
+      "value": "8vp"
+    },
+    {
+      "name": "page_title_text_size",
+      "value": "24fp"
+    },
+    {
+      "name": "normal_text_size",
+      "value": "16fp"
+    },
+    {
+      "name": "big_text_size",
+      "value": "18fp"
+    },
+    {
+      "name": "small_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "little_text_size",
+      "value": "12fp"
+    },
+    {
+      "name": "login_more_margin_bottom",
+      "value": "30vp"
+    },
+    {
+      "name": "login_more_margin_top",
+      "value": "8vp"
+    },
+    {
+      "name": "forgot_margin_top",
+      "value": "8vp"
+    },
+    {
+      "name": "input_margin_top",
+      "value": "12vp"
+    },
+    {
+      "name": "line_height",
+      "value": "1vp"
+    },
+    {
+      "name": "login_button_height",
+      "value": "40vp"
+    },
+    {
+      "name": "login_button_margin_top",
+      "value": "87vp"
+    },
+    {
+      "name": "login_button_margin_bottom",
+      "value": "12vp"
+    },
+    {
+      "name": "vertical_line_margin",
+      "value": "15vp"
+    },
+    {
+      "name": "login_progress_size",
+      "value": "30vp"
+    },
+    {
+      "name": "login_progress_margin_top",
+      "value": "20vp"
+    },
+    {
+      "name": "other_login_margin_top",
+      "value": "50vp"
+    },
         {
           "name": "other_login_margin_bottom",
           "value": "12vp"
@@ -303,8 +303,90 @@
         {
           "name": "setting_settingCell_right",
           "value": "22vp"
-        }
-
-
+        },
+    {
+      "name": "classify_item_width",
+      "value": "100vp"
+    },
+    {
+      "name": "course_item_height",
+      "value": "96vp"
+    },
+    {
+      "name": "classify_item_height",
+      "value": "56vp"
+    },
+    {
+      "name": "title_line_height",
+      "value": "20vp"
+    },
+    {
+      "name": "course_item_padding",
+      "value": "12vp"
+    },
+    {
+      "name": "item_padding_left",
+      "value": "8vp"
+    },
+    {
+      "name": "normal_border_radius",
+      "value": "18vp"
+    },
+    {
+      "name": "header_font_size",
+      "value": "18fp"
+    },
+    {
+      "name": "normal_font_size",
+      "value": "14fp"
+    },
+    {
+      "name": "font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "flex_font_size",
+      "value": "12fp"
+    },
+    {
+      "name": "border_radius",
+      "value": "20vp"
+    },
+    {
+      "name": "border_width",
+      "value": "1vp"
+    },
+    {
+      "name": "flex_layout_margin",
+      "value": "10vp"
+    },
+    {
+      "name": "margin_left",
+      "value": "12vp"
+    },
+    {
+      "name": "margin_right",
+      "value": "15vp"
+    },
+    {
+      "name": "margin_top_bottom",
+      "value": "8vp"
+    },
+    {
+      "name": "clear_image_right",
+      "value": "12vp"
+    },
+    {
+      "name": "clear_text_top",
+      "value": "12vp"
+    },
+    {
+      "name": "clear_text_bottom",
+      "value": "4vp"
+    },
+    {
+      "name": "clear_no_search_top",
+      "value": "172vp"
+    }
   ]
 }

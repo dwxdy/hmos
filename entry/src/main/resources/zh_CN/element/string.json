@@ -243,9 +243,39 @@
         {
           "name": "setting_toggle",
           "value": "开关"
-        }
-
-
+        },
+    {
+      "name": "loading",
+      "value": "加载数据中..."
+    },
+    {
+      "name": "free_price",
+      "value": "免费"
+    },
+    {
+      "name": "price_str",
+      "value": "¥%d"
+    },
+    {
+      "name": "hei_ti_medium",
+      "value": "HarmonyHeiTi-Medium"
+    },
+    {
+      "name": "hei_ti",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "recent_searches",
+      "value": "最近搜索"
+    },
+    {
+      "name": "no_search_content",
+      "value": "没有搜索内容"
+    },
+    {
+      "name": "search",
+      "value": "搜索"
+    }
   ]
 }
 
